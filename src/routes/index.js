@@ -11,9 +11,9 @@ router.use('/', fileRouter);
 router.get('/error', (req, res) => {
     res.send('<h1>404 Not Found</h1><h4>Không tìm thấy đường dẫn bạn yêu cầu, vui lòng thử lại !</h5> <a href="/">Về trang chủ</a>')
 })
-router.use('/', (req, res) => {
-    res.redirect('/error')
-})
+// router.use('/', (req, res) => {
+//     res.redirect('/error')
+// })
 
 
 module.exports = router;
